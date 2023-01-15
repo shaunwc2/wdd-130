@@ -57,7 +57,7 @@ header{
 }
 nav a:hover{
     background-color: var(--primary-color);
-    color: var(--primary-color)
+    color: var(--paragraph-color-on-color);
 }
 .book, .join{
     background-color: var(--secondary-color);
