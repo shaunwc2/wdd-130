@@ -31,6 +31,7 @@ nav a{
     text-align: center;
     color: var(--primary-color);
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4{
@@ -51,6 +52,10 @@ main section{
 }
 body{
     background-color: var(--secondary-color);
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header{
     background-color: var(--primary-color);
@@ -60,9 +65,13 @@ nav a:hover{
     color: var(--paragraph-color-on-color);
 }
 .book, .join{
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--paragraph-color-on-color);
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover{
     background-color: var(--secondary-color);
@@ -71,14 +80,24 @@ nav a:hover{
 
 .msg{
     background-color: var(--secondary-color);
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer{
     background-color: var(--primary-color);
     color: var(--paragraph-color-on-color);
+    padding: 25px 50px;
 }
 
 .home-title{
     color: var(--paragraph-color-on-color);
+    font-family: Lato;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h2{
+    margin: 0;
 }
 h4{
     color: var(--paragraph-color-on-color);
@@ -86,10 +105,13 @@ h4{
 
 .msg h2{
     color: var(--paragraph-color-on-color);
+    font-family: Lato;
 }
 
 .msg p{
     color: var(--paragraph-color-on-color);
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer a{
@@ -107,12 +129,15 @@ footer a:hover{
   
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
     width: 100%;
 }
-
+#logo_link{
+    padding-top: 5px;
+}
 footer p {
     font-size: 1.2em;
 }  
@@ -120,3 +145,18 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }  
+
+footer .social img {  
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid var(--primary-color);
+}
+main section img {
+    box-sizing: border-box;
+}
