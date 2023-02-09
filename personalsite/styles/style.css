@@ -119,8 +119,8 @@ body{
 
 #fun-img{
     width: 100%;
-
 }
+
 .msg{
     grid-column: 2/3;
     background: var(--accent2-color);
