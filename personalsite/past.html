@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/style-past.css">
 </head>
 <body>
     <header>
@@ -18,25 +19,35 @@
         </nav>
     </header>
     <main class="home-grid">
-        <section class="2022">
-            <img class="card-img" src="images/cheeseballs.jpeg" alt="22 image">
-            <h2>2022</h2>
-        </section>
-        <section class="2021">
-            <img class="card-img" src="images/everyone.png" alt="21 image">
-            <h2>2021</h2>
-        </section>
-        <section class="2020">
-            <img class="card-img" src="images/lineup.jpeg" alt="20 image">
-            <h2>2020</h2>
-        </section>
-        <section class="2019">
-            <img class="card-img" src="images/together.jpeg" alt="19 image">
-            <h2>2019</h2>
-        </section>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/fhe.jpeg" style="width:100%">
+              <div class="text">2022</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/everyone.png" style="width:100%">
+              <div class="text">2021</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/lineup.jpeg" style="width:100%">
+              <div class="text">2020</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="images/together.jpeg" style="width:100%">
+                <div class="text">2019</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+        </div>
         <section class="msg">
             <h2>Traditions</h2>
-            <p>Traditions There aren't many things that are required for our reunion, but the snack shack is one of them. Everyone brings a treat of some kind to add to the hoard of food. One of the mandatory snacks is buckets of cheese balls that no one eats but will still end up at Jan's house in the end.</p>
+            <p>There aren't many things that are required for our reunion, but the snack shack is one of them. Everyone brings a treat of some kind to add to the hoard of food. One of the mandatory snacks is buckets of cheese balls that no one eats but will still end up at Jan's house in the end.</p>
         </section>
     </main>
 
@@ -52,5 +63,33 @@
             </a>
         </div>
     </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 </html>
