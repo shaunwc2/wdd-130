@@ -28,19 +28,22 @@ Fonts are separated by a | */
   --nav-hover-link-color: white;
   --nav-hover-background-color: var(--secondary-color);
 }
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
-  }
+}
 
 header{
     background-color: var(--primary-color);
     display: grid;
     grid-template-columns: 150px auto;
 }
+
 .logo{
     width:120px;
 }
+
 nav a{
     text-align: center;
     color: var(--secondary-color);
@@ -95,6 +98,7 @@ body{
     object-fit: cover;
     border: 10px solid var(--accent3-color);
 }
+
 .msg{
     background: var(--accent1-color);
     color: var(--paragraph-color-on-color);
@@ -102,14 +106,14 @@ body{
     align-items: center;
     padding: 20px;
 }
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
+}
   
-  /* Next & previous buttons */
-  .prev, .next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -122,21 +126,18 @@ body{
     border-radius: 0 3px 3px 0;
     user-select: none;
     background-color: var(--accent1-color);
-    
-  }
+}
   
-  /* Position the "next button" to the right */
-  .next {
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+.prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-  }
+}
   
-  .text {
+.text {
     color: #f2f2f2;
     font-size: 50px;
     font-style: bold;
@@ -145,13 +146,13 @@ body{
     width: 100%;
     text-align: center;
     background-color: rgba(0,0,0,0.8);;
-  }
+}
   
-  
-  .fade {
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
+
   
 footer{
     background-color: var(--primary-color);

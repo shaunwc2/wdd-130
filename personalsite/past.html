@@ -22,22 +22,22 @@
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-              <img src="images/fhe.jpeg" style="width:100%">
+              <img src="images/fhe.jpeg" style="width:100%" alt="2022">
               <div class="text">2022</div>
             </div>
             
             <div class="mySlides fade">
-              <img src="images/everyone.png" style="width:100%">
+              <img src="images/everyone.png" style="width:100%" alt="2021">
               <div class="text">2021</div>
             </div>
             
             <div class="mySlides fade">
-              <img src="images/lineup.jpeg" style="width:100%">
+              <img src="images/lineup.jpeg" style="width:100%" alt="2020">
               <div class="text">2020</div>
             </div>
             
             <div class="mySlides fade">
-                <img src="images/together.jpeg" style="width:100%">
+                <img src="images/together.jpeg" style="width:100%" alt="2019">
                 <div class="text">2019</div>
             </div>
 
@@ -78,17 +78,13 @@
         function showSlides(n) {
           let i;
           let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
           if (n > slides.length) {slideIndex = 1}    
           if (n < 1) {slideIndex = slides.length}
           for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";  
           }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
           slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
+          
         }
     </script>
 </body>
